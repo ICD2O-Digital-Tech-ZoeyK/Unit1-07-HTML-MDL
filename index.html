@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="description" content="My First Web Page, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Zoey Kariyal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <title>My First Webpage, with JavaScript</title>
+
+    <!-- Include Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
   </head>
+
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script>
+      // Function for the button click event
+      function myButtonClicked() {
+        alert("Hello, World!");
+        
+        // Trigger the confetti effect
+        confetti({
+          particleCount: 200,  // Number of confetti pieces
+          spread: 360,         // Spread in degrees
+          origin: { x: 0.5, y: 0.5 }, // Confetti spread from the button (center)
+          colors: ['#ff0', '#f0f', '#0ff', '#f00', '#00f'] // Confetti colors
+        });
+      }
+    </script>
+
+    <h1>Hello, World! with JS</h1>
+
+    <!-- Colored raised button with confetti effect on click -->
+    <button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Click Me!
+    </button>
+
+    <br><br>
+    
+    <p>
+      Here is the <a href="./more_js.html">link</a> to my second JS page.
+    </p>
   </body>
 </html>

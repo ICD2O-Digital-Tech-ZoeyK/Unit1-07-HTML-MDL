@@ -1,4 +1,88 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
-* This file contains the CSS for index.html
+/* Created by: Ms Raffin
+ * Created on: Feb. 2022
+ * This CSS file defines the style for index.html 
 */
+
+/* General Body Styling */
+body {
+    background-color: rgb(56, 102, 65);
+    /* A fresh green background */
+    font-family: 'Arial', sans-serif;
+    /* Cleaner and modern font */
+    color: #fff;
+    /* White text for better contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+h1 {
+    background-color: rgb(167, 201, 87);
+    /* Soft yellowish background */
+    color: rgb(65, 104, 43);
+    /* Dark green text */
+    padding: 40px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    border-radius: 10px;
+    /* Rounded corners for the heading */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
+    margin: 20px 0;
+    /* Spacing around the heading */
+}
+
+/* Paragraph Styling */
+p {
+    background-color: #6a994e;
+    /* Muted green background */
+    color: white;
+    /* White text color */
+    padding: 20px;
+    border-radius: 8px;
+    /* Rounded corners for paragraphs */
+    margin: 20px;
+    line-height: 1.6;
+    /* Makes the text more readable */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Soft shadow for depth */
+}
+
+/* Hover Effect on Paragraph */
+p:hover {
+    background-color: #4e7032;
+    /* Darker green on hover */
+    transform: scale(1.05);
+    /* Subtle zoom effect */
+    transition: all 0.3s ease;
+    /* Smooth transition for the hover effect */
+}
+
+/* Additional Section Styling (Optional) */
+section {
+    background-color: rgb(82, 132, 94);
+    /* A slightly darker green for sections */
+    padding: 30px;
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* More prominent shadow */
+    margin: 20px auto;
+    max-width: 800px;
+    /* Centering the section */
+}
+
+/* Responsive Text Size for Smaller Screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+        /* Slightly smaller heading on small screens */
+    }
+
+    p {
+        font-size: 1.2em;
+        /* Larger text for readability on small devices */
+    }
+}

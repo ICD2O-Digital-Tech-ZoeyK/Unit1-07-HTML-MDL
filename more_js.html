@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="My Second Web Page, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Ms Raffin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_more/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_more/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_more/favicon-16x16.png">
+    <link rel="manifest" href="./fav_more/site.webmanifest">
+
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-red.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>My Second Webpage, with JavaScript</title>
+
+    <!-- Include Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+  </head>
+
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script>
+      // Function for the "Click Me!" button
+      function btnClickMe() {
+        alert("Hello, World!");
+      }
+
+      // Function for the "CSS" button
+      function btnCSS() {
+        alert("Style is still important!");
+      }
+
+      // Function for triggering confetti
+      function triggerConfetti() {
+        confetti({
+          particleCount: 200, // Number of confetti pieces
+          spread: 360, // Spread in degrees
+          origin: { x: 0.5, y: 0.5 }, // Confetti spread from center
+          colors: ['#ff0', '#f0f', '#0ff', '#f00', '#00f'], // Colors for the confetti
+        });
+      }
+    </script>
+
+    <h1>Hello, World! with JS</h1>
+
+    <!-- Clickable Paragraph with Confetti Trigger -->
+    <p onclick="triggerConfetti()">Proper HTML style is important.</p>
+
+    <!-- Colored raised button -->
+    <button onclick="btnClickMe()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+      Click Me!
+    </button> 
+
+    <!-- Raised button with ripple -->
+    <button onclick="btnCSS()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+      CSS
+    </button>
+
+  </body>
+</html>
